@@ -1,3 +1,5 @@
+#Reduce 1
+
 from operator import itemgetter
 import sys
 
