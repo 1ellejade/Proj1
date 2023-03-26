@@ -10,5 +10,4 @@ for line in sys.stdin:
       hit=1
     else:
       hit=0
-    g.write('%s\t%s' % ((match.group('A') + '; ' + match.group('B')), hit))
-    g.write('\n')
+    print('%s\t%s' % ((match.group('A') + '; ' + match.group('B')), hit))
