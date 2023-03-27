@@ -38,8 +38,7 @@ for line in sys.stdin:
 
         if zone_dict.get(players) is None:
           zone_dict[players]=[]
-        else:
-          zone_dict[players].append([[x,y,z],[hit,count]])
+        zone_dict[players].append([[x,y,z],[hit,count]])
 
     except ValueError:
         pass
@@ -94,8 +93,7 @@ for player in zone_dict.keys():
         #append hits for later
         if c_hit_dict.get(centroid) is None:
           c_hit_dict[centroid]=[]
-        else:
-          c_hit_dict[centroid].append(z[1])
+        c_hit_dict[centroid].append(z[1])
 
       try:
         new[0],new[1],new[2]=round(new[0]/N,1),round(new[1]/N,1),round(new[2]/N,1) #giving the avg
@@ -123,8 +121,7 @@ for player in zone_dict.keys():
 
       if zone_hit_dict.get(player) is None:
         zone_hit_dict[player]=[]
-      else:
-        zone_hit_dict[player].append([final_zone_dict[player][index], hit_rate])
+      zone_hit_dict[player].append([final_zone_dict[player][index], hit_rate])
         
 
 for player in zone_hit_dict:
