@@ -32,8 +32,7 @@ for line in sys.stdin:
       
       if zone_dict.get(players) is None:
         zone_dict[players]=[]
-      else:
-        zone_dict[players].append([x,y,z])
+      zone_dict[players].append([x,y,z])
         
   except ValueError:
       pass
